@@ -1,5 +1,5 @@
 def prime?(num)
-	if num.negative? || num == 0
+	if num <= 1
 		return false
 	end
   new_arr = []
@@ -7,7 +7,7 @@ def prime?(num)
   arr.each do |int|
    new_arr << int if num%int == 0
   end
-  if new_arr.length > 2 || num == 1
+  if new_arr.length > 2 
     false
   else 
     true
